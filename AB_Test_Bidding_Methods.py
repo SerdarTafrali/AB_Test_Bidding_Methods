@@ -18,8 +18,8 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
-dataframe_control = pd.read_excel("datasets/ab_testing.xlsx" , sheet_name="Control Group")
-dataframe_test = pd.read_excel("datasets/ab_testing.xlsx" , sheet_name="Test Group")
+dataframe_control = pd.read_excel("../AB_Test_Bidding_Methods/ab_testing.xlsx" , sheet_name="Control Group")
+dataframe_test = pd.read_excel("../AB_Test_Bidding_Methods/ab_testing.xlsx" , sheet_name="Test Group")
 
 df_control = dataframe_control.copy()
 df_test = dataframe_test.copy()

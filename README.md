@@ -1,25 +1,26 @@
 # Comparison of AB Test and Conversion of Bidding Methods
 
 
-## İş Problemi
+## Business Problem
 
 
-Facebook bir süre önce mevcut "maximum bidding" adı verilen teklif verme türüne alternatif olarak, yeni bir teklif türü olan "average bidding"’i tanıttı. Müşterilerimizden biri, bu yeni özelliği test etmeye karar verdi ve average bidding'in maximum bidding'den daha fazla dönüşüm getirip getirmediğini anlamak için bir A/B testi yapmak istiyor. A/B testi 1 aydır devam ediyor ve müşteri şimdi bizden bu A/B testinin sonuçlarını analiz etmemizi bekliyor. Müşteri için nihai başarı ölçütü Purchase'dır. Bu nedenle, istatistiksel testler için Purchasemetriğine odaklanılmalıdır.
+Facebook recently introduced a new bidding type, 'average bidding', as an alternative to the existing bidding type called 'maximum bidding'. One of our customers has decided to test this new feature and wants to do an A/B test to see if average bidding converts more than maximum bidding. A/B testing has been going on for 1 month and the client is now waiting for us to analyze the results of this A/B test. The ultimate success criterion for the customer is Purchase. Therefore, the focus should be on Purchasemetric for statistical testing.
 
 
 
-## Veri Seti Hikayesi
+## Dataset Story
 
-Bir firmanın web site bilgilerini içeren bu veri setinde kullanıcıların gördükleri ve tıkladıkları reklam sayıları gibi bilgilerin yanı sıra buradan gelen kazanç bilgileri yer almaktadır. Kontrol ve Test grubu olmak üzere iki ayrı veri seti vardır. Bu veri setleri ab_testing.xlsx excel’inin ayrı sayfalarında yer almaktadır. Kontrol grubuna Maximum Bidding, test grubuna Average Bidding uygulanmıştır.
+In this dataset, which includes the website information of a company, there is information such as the number of advertisements that users see and click, as well as earnings information from here. There are two separate data sets, the control and test groups. These datasets are in separate sheets of the ab_testing.xlsx excel. Maximum Bidding was applied to the control group and Average Bidding was applied to the test group.
 
-- impression: Reklam görüntüleme sayısı
-- Click: Görüntülenen reklama tıklama sayısı
-- Purchase: Tıklanan reklamlar sonrası satın alınan ürün sayısı
-- Earning: Satın alınan ürünler sonrası elde edilen kazanç
+- impression: Number of ad views
+- Click: Number of clicks on the displayed ad
+- Purchase: The number of products purchased after the ads clicked
+- Earning: Earnings after purchased items
 
-## Proje Aşamaları
 
-- Veriyi Hazırlama ve Analiz etme
-- A/B Testinin Hipotezinin Tanımlanması
-- Hipotez Testinin Gerçekleştirilmesi
-- Sonuçların Analizi
+## Project Stages
+
+- Preparing and Analyzing Data
+- Defining the Hypothesis of the A/B Test
+- Performing Hypothesis Testing
+- Analysis of Results
